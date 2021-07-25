@@ -8,6 +8,7 @@
 // @icon         https://www.google.com/s2/favicons?domain=bilibili.com
 // @grant        none
 // @require http://code.jquery.com/jquery-1.11.0.min.js
+// @run-at document-body
 // ==/UserScript==
 
 (function() {
