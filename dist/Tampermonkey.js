@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Bilibili_Anime_Space_Cracker
 // @namespace    http://tampermonkey.net/
-// @version      0.1
+// @version      0.2
 // @description  强制显示哔哩哔哩番剧出差的空间界面
 // @author       Aobanana
 // @match        https://space.bilibili.com/11783021*
@@ -9,6 +9,7 @@
 // @grant        none
 // @require http://code.jquery.com/jquery-1.11.0.min.js
 // @run-at document-body
+// @license MIT
 // ==/UserScript==
 
 (function() {
