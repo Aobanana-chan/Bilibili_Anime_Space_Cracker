@@ -4,7 +4,7 @@
 #### [原理和制作过程](https://aobanana.tk/article/4)
 # 使用方法
 #### 下载安装油猴插件（Tampermonkey），手动引入dist/Tampermonkey.js，或去[Aobanana@GreasyFork](https://greasyfork.org/zh-CN/scripts/429817-bilibili-anime-space-cracker)安装脚本
-
+## 2021-8-3 三天前，GreasyFork脚本被人举报了，我也不准备再传了，再被举报就没意思了
 ## 如果脚本有什么BUG，或者失效可以提交一个issue
 
 # 代码被混淆、压缩，担心安全性
