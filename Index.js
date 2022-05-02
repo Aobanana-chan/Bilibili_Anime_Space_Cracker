@@ -1,0 +1,47 @@
+//停止加载界面
+window.stop();
+//重构body
+$("body").empty()
+$("body").append(
+"    <div id=\"biliMainHeader\" disable-sticky style=\"height:56px\"></div>\n"
++ "    <div id=\"space-app\"></div>\n"
++ "    <script type=\"text/javascript\">//日志上报\n"
++ "        window.spaceReport = {}\n"
++ "        window.reportConfig = {\n"
++ "            sample: 1,\n"
++ "            scrollTracker: true,\n"
++ "            msgObjects: 'spaceReport'\n"
++ "        }\n"
++ "        var reportScript = document.createElement('script')\n"
++ "        reportScript.src = '//s1.hdslb.com/bfs/seed/log/report/log-reporter.js'\n"
++ "        document.getElementsByTagName('body')[0].appendChild(reportScript)\n"
++ "        reportScript.onerror = function () {\n"
++ "            console.warn('log-reporter.js加载失败，放弃上报')\n"
++ "            var noop = function () { }\n"
++ "            window.reportObserver = {\n"
++ "                sendPV: noop,\n"
++ "                forceCommit: noop\n"
++ "            }\n"
++ "        }\n"
++ "\n"
++ "        // webp支持\n"
++ "        function webSupportCheck() {\n"
++ "            const img = new Image()\n"
++ "            img.onload = function () {\n"
++ "                window.supportWebP = (img.width > 0) && (img.height > 0)\n"
++ "            }\n"
++ "            img.onerror = function () {\n"
++ "                window.supportWebP = false\n"
++ "            }\n"
++ "            img.src = 'data:image/webp;base64,UklGRiIAAABXRUJQVlA4IBYAAAAwAQCdASoBAAEADsD+JaQAA3AAAAAA'\n"
++ "        }\n"
++ "        webSupportCheck()</script>\n"
++ "    <script src=\"//s1.hdslb.com/bfs/static/jinkela/long/js/jquery/jquery1.7.2.min.js\"></script>\n"
++ "    <script type=\"text/javascript\" src=\"//s1.hdslb.com/bfs/seed/jinkela/header-v2/header.js\" defer=\"defer\"></script>\n"
++ "    <div style=\"display:none\"><a href=\"https://www.bilibili.com/v/game/match/\">赛事库</a> <a\n"
++ "            href=\"https://www.bilibili.com/cheese/\">课堂</a> <a\n"
++ "            href=\"https://www.bilibili.com/festival/2021bnj\">2021拜年纪</a></div>\n"
++ "    <script type=\"text/javascript\"\n"
++ "        src=\"//s1.hdslb.com/bfs/static/jinkela/space/5.space.c93b4516819ba4466a477a6aeb39b418c54af16a.js\"></script>")
+//引入破解界面
+import "./space.c93b4516819ba4466a477a6aeb39b418c54af16a";
